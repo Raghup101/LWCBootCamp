@@ -1,0 +1,15 @@
+<template>
+     <!-- Brand variant: Identifies the primary action in a group of buttons -->
+     <template if:true={toggle}>
+        <div class="slds-m-around_medium">
+            <img src={jerryPicURL} class="image"/>
+            <lightning-button variant="brand" label="Show Tom" title="Primary action" onclick={showTom} class="slds-m-left_x-small"></lightning-button>
+        </div>
+    </template>
+    <template if:false={toggle}>
+        <div class="slds-m-around_medium">
+            <img src={tomPicURL} class="image"/>
+            <lightning-button variant="brand" label="Show Jerry" title="Primary action" onclick={showJerry} class="slds-m-left_x-small"></lightning-button>
+        </div>
+    </template>
+</template>
